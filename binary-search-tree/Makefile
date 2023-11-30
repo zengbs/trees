@@ -19,6 +19,7 @@ CC_FILE =  main.cpp delete.cpp insert.cpp search.cpp validate.cpp utilities.cpp
 SRC_PATH = src
 CC_SRC = $(patsubst %,$(SRC_PATH)/%,$(CC_FILE))
 
+
 # Object files
 CC_OBJ_FILE = $(CC_FILE:.cpp=.o)
 OBJ_PATH    = objective

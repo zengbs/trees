@@ -20,28 +20,37 @@ int main(){
    int numInsertion = 10000;
 
 
-
    int insert[ARRAY_LENGTH] = {0};
 
-   for (int i=0;i<numInsertion;i++){
+   for (int i=0;i<numInsertion;i++)
+   {
       // Returns a pseudo-random integer between 0 and RAND_MAX.
       int r = rand();
 
       InsertNode( &root, r );
 
+      // Insertion
       if ( insert[r%ARRAY_LENGTH] == 0)
+      {
          insert[r%ARRAY_LENGTH] = r;
-      else{
+      }
+
+      // Deletion
+      else
+      {
          DeleteNode(&root, insert[r%ARRAY_LENGTH] );
          insert[r%ARRAY_LENGTH] = 0;
       }
 
-      if (!isValidBST(root)){
+      if (!isValidBST(root))
+      {
          printf("Invalid BST! at i=%d\n", i);
          exit(EXIT_FAILURE);
       }
+
    }
 
+   printf("Valid BST with %d nodes!\n", numInsertion);
 
    return 0;
 }
