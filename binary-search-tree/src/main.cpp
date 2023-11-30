@@ -2,9 +2,9 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <time.h>
-#include "includes/typedef.hpp"
-#include "includes/prototypes.hpp"
-#include "includes/macro.hpp"
+#include "../includes/typedef.hpp"
+#include "../includes/prototypes.hpp"
+#include "../includes/macro.hpp"
 
 
 
@@ -21,7 +21,7 @@ int main(){
 
 
 
-   int insert[AAA] = {0};
+   int insert[ARRAY_LENGTH] = {0};
 
    for (int i=0;i<numInsertion;i++){
       // Returns a pseudo-random integer between 0 and RAND_MAX.
@@ -29,11 +29,11 @@ int main(){
 
       InsertNode( &root, r );
 
-      if ( insert[r%AAA] == 0)
-         insert[r%AAA] = r;
+      if ( insert[r%ARRAY_LENGTH] == 0)
+         insert[r%ARRAY_LENGTH] = r;
       else{
-         DeleteNode(&root, insert[r%AAA] );
-         insert[r%AAA] = 0;
+         DeleteNode(&root, insert[r%ARRAY_LENGTH] );
+         insert[r%ARRAY_LENGTH] = 0;
       }
 
       if (!isValidBST(root)){

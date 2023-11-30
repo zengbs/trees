@@ -2,9 +2,9 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <time.h>
-#include "includes/typedef.hpp"
-#include "includes/prototypes.hpp"
-#include "includes/macro.hpp"
+#include "../includes/typedef.hpp"
+#include "../includes/prototypes.hpp"
+#include "../includes/macro.hpp"
 
 
 

@@ -2,7 +2,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <time.h>
-#include "includes/typedef.hpp"
+#include "../includes/typedef.hpp"
 
 
 bool validate(TreeNode* node, TreeNode* prev) {

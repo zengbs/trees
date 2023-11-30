@@ -6,6 +6,6 @@
 #define ROOT        0
 #define LEFT_CHILD  1
 #define RIGHT_CHILD 2
-#define AAA 100000
+#define ARRAY_LENGTH 100000
 
 #endif
