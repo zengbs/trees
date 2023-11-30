@@ -3,7 +3,7 @@
 # Red-black Tree
 # Red-blabk-based Interval Tree
 # Memory leak validations
-The code in this repository have been validated with the command below and confirmed that memory issues are absent.
+The code in this repository have been validated with the command below and confirmed that memory issues are absent.\\
 `valgrind --leak-check=full --show-leak-kinds=all --verbose --track-origins=yes --log-file=log ./a.out`
 # Quick Start
 1. `git clone git@github.com:zengbs/trees.git`
