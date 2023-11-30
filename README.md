@@ -3,8 +3,8 @@
 # Red-black Tree
 # Red-blabk-based Interval Tree
 # Quick Start
-`git clone git@github.com:zengbs/trees.git`
-`cd binary-serach-tree`
-`make clean`
-`make`
-`./bin/a.out`
+1. `git clone git@github.com:zengbs/trees.git`
+2. `cd binary-serach-tree`
+3. `make clean`
+4. `make`
+5. `./bin/a.out`
