@@ -50,6 +50,8 @@ int main(){
 
    }
 
+   DeallocateTree(&root);
+
    printf("Valid BST with %d nodes!\n", numInsertion);
 
    return 0;

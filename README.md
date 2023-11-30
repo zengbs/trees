@@ -1,3 +1,4 @@
 # Binary Search Tree
-# Red-Black Tree
+* Support duplicate keys
+# Red-black Tree
 # Red-blabk-based Interval Tree

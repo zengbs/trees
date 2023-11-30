@@ -80,7 +80,7 @@ void DeleteNode( TreeNode **root, int key )
 
    // Case 4: The node to be deleted has both child
    //         --> Delete the inorder successor in right-subtree
-   if ( node->right != NULL && node->left != NULL ){
+   else if ( node->right != NULL && node->left != NULL ){
       TreeNode *successor = InorderSuccessor(node);
 
       if ( successor->parent->left == successor ){
@@ -98,5 +98,19 @@ void DeleteNode( TreeNode **root, int key )
 
       free(successor);
    }
+   else REPORT_ERROR;
 
+}
+
+
+
+void DeallocateTree ( TreeNode **node )
+{
+    //do nothing if passed a non-existent node
+    if ( *node == NULL )   return;
+
+    DeallocateTree( &((*node)->left) );
+    DeallocateTree( &((*node)->right) );
+
+    free(*node);
 }

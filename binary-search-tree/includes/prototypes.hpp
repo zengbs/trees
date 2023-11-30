@@ -3,6 +3,7 @@
 
 #include "typedef.hpp"
 
+void DeallocateTree ( TreeNode **node );
 bool validate(TreeNode* node, TreeNode* prev);
 bool isValidBST(TreeNode* root);
 void PrintInorder( TreeNode *node );
