@@ -8,7 +8,7 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Red-black_tree_example_with_NIL.svg/1920px-Red-black_tree_example_with_NIL.svg.png" width="480">
 
 ## Memory Leak Validations
-The code in this repository have been validated with the command below and confirmed that memory issues are absent.
+The code in this repository have been validated with the command below and confirmed that memory issue is absent.
 
 `valgrind --leak-check=full --show-leak-kinds=all --verbose --track-origins=yes --log-file=log ./a.out`
 
