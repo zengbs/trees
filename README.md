@@ -1,6 +1,6 @@
 ## Binary Search Tree
 * Accommodate the coexistence of identical keys within a single node.
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Binary_search_tree.svg/1024px-Binary_search_tree.svg.png" width="480">
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Binary_search_tree.svg" width="480">
 
 
 ## Red-black Tree
